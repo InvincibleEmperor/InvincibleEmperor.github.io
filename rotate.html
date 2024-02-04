@@ -1,0 +1,82 @@
+<style>
+    
+    .main {
+     width: 500px;
+     height: 450px !important;
+     border-color: #EEE;
+     border-radius: 10px;
+     border-width: 2px;
+
+     display: grid;
+     justify-content: center;
+     align-content: center;
+   }
+
+   .main > * {
+     grid-column: 1;
+     grid-row: 1;
+   }
+
+   .theSmiley {
+     width: 400px !important;
+     height: 400px !important;
+   }
+
+
+   .item {
+     animation: spinAround 15s linear infinite;
+     
+   }
+
+   .main > * > img {
+     animation: rotate 5s linear infinite;
+   }
+
+   @keyframes rotate {
+     from {
+       transform: rotate(0deg);
+     }
+     to {
+       transform: rotate(360deg);
+     }
+   }
+
+   @keyframes spinAround {
+     from {
+       transform: rotate(0deg) translate(275px) scale(.7) !important;
+     }
+     to {
+       transform: rotate(360deg) translate(270px) scale(.7) !important;
+     }
+   }
+ </style>
+
+<body>
+ 
+ <div class="main">
+   <img class="theSmiley" src="https://conversiondoor.com/wp-content/uploads/2024/01/new-graphic-img002.png">
+   <div class="item" style="animation-delay: -1.5s;">
+     <img src="https://www.oxedent.com/wp-content/uploads/2021/06/new-graphic-social-icon03.png">
+   </div>
+   <div class="item" style="animation-delay: -3s;">
+     <img src="https://www.oxedent.com/wp-content/uploads/2021/06/new-graphic-social-icon05.png">
+   </div>
+   
+   <div class="item" style="animation-delay: -6s;">
+     <img src="https://www.oxedent.com/wp-content/uploads/2021/06/new-graphic-social-icon06.png">
+   </div>
+  
+   <div class="item" style="animation-delay: -9s;">
+     <img src="https://www.oxedent.com/wp-content/uploads/2021/06/new-graphic-social-icon01.png">
+   </div>
+   <div class="item" style="animation-delay: -11.5s;">
+     <img src="https://www.oxedent.com/wp-content/uploads/2021/06/new-graphic-social-icon04.png">
+   </div>
+   
+   <div class="item" style="animation-delay: -13.5s;">
+     <img src="https://www.oxedent.com/wp-content/uploads/2021/06/new-graphic-social-icon02.png">
+   </div>
+   
+ </div>
+ 
+</body>

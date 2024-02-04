@@ -1,5 +1,3 @@
 ###
-# ignore build logs and db
+# ignore 
 
-build.log
-sport.db
