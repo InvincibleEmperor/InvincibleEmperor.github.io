@@ -596,7 +596,7 @@ html.modal-active, body.modal-active {
 .skill {
     margin: 1em 0;
     position: relative;
-    width: 32.5em;
+    width: 100%;
 }
 .skill__type {
     color: #fff;
