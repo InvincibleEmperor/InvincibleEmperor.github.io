@@ -426,7 +426,7 @@ Let's embark on this digital journey together!
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="" method="get">
+              <form action=""  id="contactForm">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -435,6 +435,8 @@ Let's embark on this digital journey together!
                   <div class="col-lg-6 col-12">
                     <input type="email" class="form-control" name="email" placeholder="Email" id="email">
                   </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" >
 
                   <div class="col-12">
                     <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
@@ -463,7 +465,18 @@ Let's embark on this digital journey together!
                </div>
           </div>
      </footer>
-
+<script>
+var contactForm = document.getElementById('contactForm');
+  contactForm.onsubmit = function (){
+    const nameVal = document.getElementById('name').value;
+    const emailVal = document.getElementById('email').value;
+    const messageVal = document.getElementById('message').value.replace(/\n/g, '%0A');
+    const subjectVal = document.getElementById('subject').value;
+    const mailAnchor = document.createElement("a");
+    mailAnchor.href = `https://mail.google.com/mail/?view=cm&fs=1&to=gurpreetbawa9966@gmail.com&su=${subjectVal}&body=${messageVal}&bcc=globalhumanitydevlopers@gmail.com`;
+    return false;
+  }
+</script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
